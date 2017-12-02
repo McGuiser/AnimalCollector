@@ -21,3 +21,4 @@ nbproject/genfiles.properties
 *.jnlp
 *.dll
 *.MF
+/build/

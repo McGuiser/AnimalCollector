@@ -54,20 +54,6 @@ public class Main extends SimpleApplication{
         return text;
     }
     
-    public void inventory(int numItems) {
-        String armorString = "Inventory: " + numItems;
-        BitmapText armorText = hudText(armorString, ColorRGBA.White);
-        armorText.setLocalTranslation(250, 720, 0);
-        guiNode.attachChild(armorText);
-    }
-    
-    public void currentLocation(String city) {
-        String airString = "Location: " + city;
-        BitmapText airText = hudText(airString, ColorRGBA.Blue);
-        airText.setLocalTranslation(478, 720, 0);
-        guiNode.attachChild(airText);
-    }
-    
     public void crossHair() {
         String crossString = "+";
         BitmapText crossHairText = hudText(crossString, ColorRGBA.Red);
@@ -137,9 +123,7 @@ public class Main extends SimpleApplication{
         inputManager.addMapping(MAP_SHOOT, TRIGGER_MOUSE_BUTTON_LEFT);
         inputManager.addListener(actionListener, MAP_SHOOT);
     }
-    
-    
-    
+     
     // ***** BUILD METHODS *****
     
     public void createSound() {

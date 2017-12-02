@@ -294,7 +294,7 @@ public class ObjectsAppState extends AbstractAppState implements ActionListener,
         return treeNode;
     }
     
-    public Node createCloudes(){
+    public Node createClouds(){
         Node cloudNode = new Node("clouds");
         Spatial cloud1 = app.getAssetManager().loadModel("Models/Cloud1.j3o");
         Spatial cloud2 = app.getAssetManager().loadModel("Models/Cloud2.j3o");
@@ -338,7 +338,7 @@ public class ObjectsAppState extends AbstractAppState implements ActionListener,
         objectsNode.attachChild(createFox());
         objectsNode.attachChild(createCat());
         objectsNode.attachChild(createTrees());
-        objectsNode.attachChild(createCloudes());
+        objectsNode.attachChild(createClouds());
         createPlayerControl();
         createDogControl();
         createFoxControl();
